@@ -47,20 +47,11 @@ class NewsResource extends Resource
                 DatePicker::make('date')
                     ->label('Дата')
                     ->required(),
-                FileUpload::make('image')
-                    ->visibility('public')
-                    ->directory('/media/images/news')
-                    ->label('Картинка')
-                    ->required(),
 
-                Builder::make('content')->schema([
-                    Builder\Block::make('Markdown')->schema([
-                        MarkdownEditor::make('content'),
-                    ])->label('Markdown'),
-                    Builder\Block::make('Rich')->schema([
-                        RichEditor::make('content'),
-                    ])->label('Rich')
-                ])->label('Контент')->required(),
+
+                RichEditor::make('content')
+                    ->fileAttachmentsDirectory('/media/images/news')
+                    ->fileAttachmentsVisibility('public')
             ]);
     }
 
@@ -68,13 +59,10 @@ class NewsResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name')
+                TextColumn::make('name')->label('Название')
                     ->searchable()
                     ->sortable(),
-
-                ImageColumn::make('image'),
-
-                TextColumn::make('date')
+                TextColumn::make('date')->label('Дата')
                     ->date(),
             ])
             ->filters([
