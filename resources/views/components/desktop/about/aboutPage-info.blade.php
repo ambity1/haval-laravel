@@ -1,0 +1,15 @@
+<section class="aboutPage-info">
+    <div class="d-flex justify-content-between align-items-center container">
+        <div class="text d-flex flex-column">
+            <h3>Группа компаний «БашАвтоКом» — это один из крупнейших дилерских альянсов в Республике Башкортостан, история которого насчитывает более 30 лет</h3>
+            <p>ГК «Башавтоком» - это более 30 лет опыта в 4 городах Республики — Уфа, Стерлитамак, Октябрьский и Белебей, 10 брендов - Nissan, Renault, Honda, Suzuki, Lada, Volkswagen, Haval, Isuzu, Changan, Omoda более 100 000 клиентов.</p>
+            <p>В наших дилерских центрах вы найдёте именно свой автомобиль, а обслуживание вашего автомобиля профессионалами наших сервисных станций обеспечат безопасную и комфортную экплуатацию!</p>
+            <p>Каждый из 850 сотрудников Компании «Башавтоком», по-настоящему понимающих и любящих автомобили, делает максимум для вашего удобства!</p>
+            <div class="d-flex"><a class="btn btn-black-trnsp askMe askMeConsultation">Заказать звонок</a></div>
+        </div>
+        <div class="photo d-flex flex-column">
+            <div><img src="/media/about_pic1.jpg"></div>
+            <div><img src="/media/about_pic2.jpg"></div>
+        </div>
+    </div>
+</section>

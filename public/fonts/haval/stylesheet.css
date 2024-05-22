@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Haval';
+    src: local('Haval-Normal'),
+        url('Haval-400.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haval';
+    src: local('Haval-Light'),
+        url('Haval-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haval';
+    src: local('Haval-Medium'),
+        url('Haval-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
